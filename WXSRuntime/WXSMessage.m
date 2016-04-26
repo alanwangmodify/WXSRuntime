@@ -68,8 +68,8 @@ void dynamicMehod(id self, SEL cmd) {
 + (void)test {
     
     WXSMessage *message = [[WXSMessage alloc] init];
-//    [message dynamicMehod];
-    ( (id  (*) (id,SEL))objc_msgSend)((id)message,@selector(dynamicMehod));
+    [message dynamicMehod];
+
     
 }
 

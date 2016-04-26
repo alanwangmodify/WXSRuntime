@@ -12,7 +12,7 @@
 @interface WXSMessage : NSObject
 
 
-//-(void)dynamicMehod;
+-(void)dynamicMehod;
 + (void)test;
 
 @end
