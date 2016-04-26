@@ -16,8 +16,10 @@
 		928AEEB11CC4731C009DBC1B /* WXSRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 928AEEB01CC4731C009DBC1B /* WXSRuntimeTests.m */; };
 		928AEEBC1CC4731C009DBC1B /* WXSRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 928AEEBB1CC4731C009DBC1B /* WXSRuntimeUITests.m */; };
 		928AEECB1CC483BE009DBC1B /* WXSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 928AEECA1CC483BE009DBC1B /* WXSModel.m */; };
+		92A0081C1CCF45F400852890 /* ShowExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 92A0081B1CCF45F400852890 /* ShowExchange.m */; };
 		92E5E8021CC8690600135710 /* NSObject+AddProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E5E8011CC8690600135710 /* NSObject+AddProperty.m */; };
 		92E5E80B1CC896E300135710 /* WXSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E5E80A1CC896E300135710 /* WXSMessage.m */; };
+		92E5E80E1CCA150E00135710 /* WXSMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E5E80D1CCA150E00135710 /* WXSMethod.m */; };
 		92FA4E461CC5DA770034A0AB /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E451CC5DA770034A0AB /* TestModel.m */; };
 		92FA4E491CC740EA0034A0AB /* UIViewController+WXSSwizzing.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E481CC740EA0034A0AB /* UIViewController+WXSSwizzing.m */; };
 		92FA4E521CC783080034A0AB /* WXSHookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FA4E511CC783080034A0AB /* WXSHookViewController.m */; };
@@ -59,10 +61,14 @@
 		928AEEBD1CC4731C009DBC1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		928AEEC91CC483BE009DBC1B /* WXSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSModel.h; sourceTree = "<group>"; };
 		928AEECA1CC483BE009DBC1B /* WXSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSModel.m; sourceTree = "<group>"; };
+		92A0081A1CCF45F400852890 /* ShowExchange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowExchange.h; sourceTree = "<group>"; };
+		92A0081B1CCF45F400852890 /* ShowExchange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowExchange.m; sourceTree = "<group>"; };
 		92E5E8001CC8690600135710 /* NSObject+AddProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AddProperty.h"; sourceTree = "<group>"; };
 		92E5E8011CC8690600135710 /* NSObject+AddProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AddProperty.m"; sourceTree = "<group>"; };
 		92E5E8091CC896E300135710 /* WXSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSMessage.h; sourceTree = "<group>"; };
 		92E5E80A1CC896E300135710 /* WXSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSMessage.m; sourceTree = "<group>"; };
+		92E5E80C1CCA150D00135710 /* WXSMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXSMethod.h; sourceTree = "<group>"; };
+		92E5E80D1CCA150E00135710 /* WXSMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXSMethod.m; sourceTree = "<group>"; };
 		92FA4E441CC5DA770034A0AB /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		92FA4E451CC5DA770034A0AB /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		92FA4E471CC740EA0034A0AB /* UIViewController+WXSSwizzing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+WXSSwizzing.h"; sourceTree = "<group>"; };
@@ -119,8 +125,8 @@
 		928AEE951CC4731C009DBC1B /* WXSRuntime */ = {
 			isa = PBXGroup;
 			children = (
-				928AEE991CC4731C009DBC1B /* AppDelegate.h */,
 				928AEE9A1CC4731C009DBC1B /* AppDelegate.m */,
+				928AEE991CC4731C009DBC1B /* AppDelegate.h */,
 				928AEE9C1CC4731C009DBC1B /* ViewController.h */,
 				928AEE9D1CC4731C009DBC1B /* ViewController.m */,
 				92FA4E441CC5DA770034A0AB /* TestModel.h */,
@@ -129,12 +135,16 @@
 				928AEECA1CC483BE009DBC1B /* WXSModel.m */,
 				92FA4E471CC740EA0034A0AB /* UIViewController+WXSSwizzing.h */,
 				92FA4E481CC740EA0034A0AB /* UIViewController+WXSSwizzing.m */,
+				92A0081A1CCF45F400852890 /* ShowExchange.h */,
+				92A0081B1CCF45F400852890 /* ShowExchange.m */,
 				92FA4E501CC783080034A0AB /* WXSHookViewController.h */,
 				92FA4E511CC783080034A0AB /* WXSHookViewController.m */,
 				92E5E8001CC8690600135710 /* NSObject+AddProperty.h */,
 				92E5E8011CC8690600135710 /* NSObject+AddProperty.m */,
 				92E5E8091CC896E300135710 /* WXSMessage.h */,
 				92E5E80A1CC896E300135710 /* WXSMessage.m */,
+				92E5E80C1CCA150D00135710 /* WXSMethod.h */,
+				92E5E80D1CCA150E00135710 /* WXSMethod.m */,
 				928AEE9F1CC4731C009DBC1B /* Main.storyboard */,
 				928AEEA21CC4731C009DBC1B /* Assets.xcassets */,
 				928AEEA41CC4731C009DBC1B /* LaunchScreen.storyboard */,
@@ -301,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				928AEECB1CC483BE009DBC1B /* WXSModel.m in Sources */,
+				92A0081C1CCF45F400852890 /* ShowExchange.m in Sources */,
 				92E5E80B1CC896E300135710 /* WXSMessage.m in Sources */,
 				92FA4E461CC5DA770034A0AB /* TestModel.m in Sources */,
 				92E5E8021CC8690600135710 /* NSObject+AddProperty.m in Sources */,
@@ -309,6 +320,7 @@
 				928AEE9B1CC4731C009DBC1B /* AppDelegate.m in Sources */,
 				92FA4E491CC740EA0034A0AB /* UIViewController+WXSSwizzing.m in Sources */,
 				928AEE981CC4731C009DBC1B /* main.m in Sources */,
+				92E5E80E1CCA150E00135710 /* WXSMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

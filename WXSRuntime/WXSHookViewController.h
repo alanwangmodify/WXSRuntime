@@ -11,5 +11,6 @@
 #import <objc/message.h>
 
 @interface WXSHookViewController : UIViewController
+- (void)wxs_viewWillAppear:(BOOL)animated;
 
 @end

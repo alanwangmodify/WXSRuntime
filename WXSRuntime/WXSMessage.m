@@ -38,7 +38,7 @@ void dynamicMehod(id self, SEL cmd) {
 
 // 第三步，返回方法签名。如果返回nil，则表示无法处理消息 调用-doesNotRecognizeSelector
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
-    if ([NSStringFromSelector(aSelector) isEqualToString:@"testError"]) {
+    if ([NSStringFromSelector(aSelector) isEqualToString:@"dynamicMehod"]) {
         return [NSMethodSignature signatureWithObjCTypes:"v@:"];
     }
     
@@ -68,12 +68,10 @@ void dynamicMehod(id self, SEL cmd) {
 + (void)test {
     
     WXSMessage *message = [[WXSMessage alloc] init];
-    [message dynamicMehod];
-    ( (id  (*) (id,SEL))objc_msgSend)((id)message,@selector(testError));
+//    [message dynamicMehod];
+    ( (id  (*) (id,SEL))objc_msgSend)((id)message,@selector(dynamicMehod));
     
 }
-
-
 
 
 

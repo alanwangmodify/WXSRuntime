@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-    _nameArr = @[@"mode",@" ",@" ",@"message"];
+    _nameArr = @[@"mode",@" ",@" ",@"message",@"WXSMethod",@"hook"];
 
     
 }
@@ -59,7 +59,7 @@
         }
             break;
         case 1: {
-            [UIViewController forTest];
+            [ShowExchange forTest];
         }
             break;
         case 2:{
@@ -69,6 +69,16 @@
             [WXSMessage test];
         }
             break;
+        case 4:{
+            [WXSMethod forTest];
+        }
+            break;
+        case 5:{
+            WXSHookViewController *vc = [[WXSHookViewController alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
         default:
             break;
     }

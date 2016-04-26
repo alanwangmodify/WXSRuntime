@@ -11,6 +11,8 @@
 #import "NSObject+AddProperty.h"
 #import "UIViewController+WXSSwizzing.h"
 #import "WXSMessage.h"
+#import "WXSMethod.h"
+#import "ShowExchange.h"
 @interface ViewController : UIViewController
 
 
