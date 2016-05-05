@@ -18,7 +18,7 @@
                            @"name"  : @"王小树 Alan_iOS",
                            @"title" : @"Model",
                            @"num"   : @(20),
-                           @"array" : @[@"sm1", @"sm2", @"itme3"],
+                           @"array" : @[@"1", @"2", @"3"],
                            @"dict"  : @{@"key1" : @"value1", @"key2":@"value2"},
                            @"myUrl" :@"http://www.jianshu.com/p/f73ea068efd2"
                            };
