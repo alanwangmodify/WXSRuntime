@@ -25,7 +25,6 @@
     [self.view addSubview:self.tableView];
     _nameArr = @[@"字典转模型的自动转换 和 自动归档解档",@"方法交换",@"类别添加属性",@"消息转发",@"Mehtod操作",@"Hook"];
 
-    
 }
 -(UITableView *)tableView {
     if (!_tableView) {
